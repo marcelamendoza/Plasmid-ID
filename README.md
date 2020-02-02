@@ -5,6 +5,7 @@ Tagging strains using high-density ID reporter plasmids
 ## Dependencies
 
 In order to use ```Plasmid-ID``` you must install the following libraries:
+
     * Pandas
     * BioPython
 
