@@ -2,7 +2,7 @@
 Tagging strains using high-density ID reporter plasmids
 
 
-##Dependencies
+## Dependencies
 
 In order to use ```Plasmid-ID``` you must install the following libraries:
     * Pandas
@@ -15,11 +15,11 @@ pip3.7 install biopython
 
 ```
 
-##Input files
+## Input files
 
 ![Diagram](figures/Workflow_IT_PCR-01B.png)
 
-###Plasmid ID sequences
+### Plasmid ID sequences
 
 The barcode sequence corresponding to each amplicon must be provided in a file with the following columns: ```Barcode name``` and ```ID plasmid sequence```. The headers of the columns ***must*** match the names described above. The file may have extra columns for reference in the downstream analysis. 
 
@@ -38,7 +38,7 @@ Barcode name,ID plasmid sequence
 
 See ```examples/plasmids.csv``` for further reference. This corresponds to ```Column BC``` and ```Row BC``` in the diagram above. 
 
-###Barcode sequences. 
+### Barcode sequences. 
 
 The sequence of the forward and reverse primers that where used to amplify the different plasmids. The sequences must be in fasta format. ```Plasmid-ID``` uses the forward and reverse complement of each sequence.  This correspond to ```FW pad``` and ```RV pad``` in the figure above. 
 
@@ -60,14 +60,14 @@ CTAGTCCCAGTCACGACGTTGTAAAACG
 ```
 
 
-###IonTorrent reads
+### IonTorrent reads
 
 The raw sequences from IonTorrent in ```fastq.gz``` format. The quality is not used in the program, as the assumption is that the coverage is high enough that the number of amplicons will be enough to discard the noise. In general, the threshold is to remove sequences that appear less in than 2% of the sample. 
 
 
 
 
-##Running the program 
+## Running the program 
 
 To run the program, the following command can be used
 
