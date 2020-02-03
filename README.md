@@ -6,8 +6,8 @@ Tagging strains using high-density ID reporter plasmids
 
 In order to use ```Plasmid-ID``` you must install the following libraries:
 
-* Pandas
-* BioPython
+* [Pandas](https://pandas.pydata.org)
+* [BioPython](https://biopython.org)
 
 
 ```sh
@@ -115,7 +115,7 @@ This file contains the counts of the observations of each plasmid and their corr
 * **rev_name** ID of the ```Row BC``` that is attached to the reverse primer. 
 * **pl_name** Name of the plasmid
 * **pl_pos count** How many times the plasmid is observed. This column is used in the downstram analysis to filter out the plasmids with low frequency. 
-* **pl_pos mean** Average size of the plasmid. Used as a sanity check. 
+* **pl_pos mean** Position of the start of the plasmid. Used as a sanity check. 
 
 Running the command above should produce a file starting like this: 
 
@@ -131,3 +131,11 @@ fw_name,rev_name,pl_name,,
 ```
 
 
+
+## References
+
+This code should work with any experiment with the configuration described above. However, the barcode sequences in this repository are based on the following [paper](https://www.nature.com/articles/ismej20128):
+
+```
+J. G. Caporaso, et al., Ultra-high-throughput microbial community analysis on the Illumina HiSeq and MiSeq platforms. ISME J. 6, 1621–1624 (2012).
+```
